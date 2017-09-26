@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8>
+    <title>menu1</title>
+<style>
+  body{  font-family: 'PT Sans Caption', sans-serif;}
+  h1{text-align: center;}
+.menu-main, .menu-inline, .menu-float, .menu-flex{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+.menu-main{  position: relative;}
+.menu-main li {display: inline-block;}
+.menu-main a {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 10px 20px;
+  font-family: 'PT Sans Caption', sans-serif;
+  color: #555555;
+  position: relative;
+}
+.menu-main li::after {
+  content: "|";
+  position: absolute;
+  color: #FF0000;
+  font-size: 28px;
+  top: 5px;
+}
+.menu-main a::after {right: 5px;}
+.menu-main a:hover, .menu-float a:hover,.menu-inline a:hover, .menu-flex a:hover {color: #BB2800;}
+.menu-main li:last-of-type::after {content: ""}
+
+
+.menu-float li{float: left;  border-right: 3px solid red;}
+.menu-float {overflow: hidden; margin: 0 120px;}
+.menu-float a {
+  display: block;
+  margin: 0 5px;
+  padding: 10px 20px;
+  color: #1B0870;
+
+}
+.menu-float li:last-of-type {border-right: none;}
+.menu-inline li:last-of-type {border-right: none;}
+.menu-flex li:last-of-type {border-right: none;}
+.clearfix{clear: both;}
+.menu-inline li{display: inline;padding: 0 0.4em 0 0;  border-right: 3px solid #FF0000;}
+
+.menu-flex{
+  display: -webkit-flex;
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
+}
+.menu-flex a{
+  padding: 1em;
+  display: block;
+  border-right: 3px solid #FF0000;
+}
+</style>
+<body>
+  <h1>Вариант №1 с помощью inline-block и after</h1>
+<ul class="menu-main">
+  <li><a href="">первая ссылка</a></li>
+  <li><a href="">вторая ссылка</a></li>
+  <li><a href="">третья ссылка</a></li>
+  <li><a href="">четвёртая ссылка</a></li>
+  <li><a href="">пятая ссылка</a></li>
+</ul>
+<h1>Вариант №2 с помощью float: left</h1>
+<ul class="menu-float">
+  <li><a href="">первая ссылка</a></li>
+  <li><a href="">вторая ссылка</a></li>
+  <li><a href="">третья ссылка</a></li>
+  <li><a href="">четвёртая ссылка</a></li>
+  <li><a href="">пятая ссылка</a></li>
+</ul>
+<div class="clearfix"></div>
+<h1>Вариант №3 с помощью inline</h1>
+<ul class="menu-inline">
+  <li><a href="">первая ссылка</a></li>
+  <li><a href="">вторая ссылка</a></li>
+  <li><a href="">третья ссылка</a></li>
+  <li><a href="">четвёртая ссылка</a></li>
+  <li><a href="">пятая ссылка</a></li>
+</ul>
+<h1>Вариант №4 с помощью flex</h1>
+<ul class="menu-flex">
+  <li><a href="">первая ссылка</a></li>
+  <li><a href="">вторая ссылка</a></li>
+  <li><a href="">третья ссылка</a></li>
+  <li><a href="">четвёртая ссылка</a></li>
+  <li><a href="">пятая ссылка</a></li>
+</ul>
+<div>
+
+</div>
+
+</body>
+</html>
