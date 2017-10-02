@@ -1,0 +1,23 @@
+body {
+    background: lightblue;
+    height: 100%;
+    margin: 0;
+  }
+  article {
+    border: solid 10px lightblue;
+    background: #fff;
+    border-radius: 50px;
+
+  }
+  p {
+    text-align: center;
+  }
+  div {
+    border-radius: 25px;
+  }
+  article, div {
+ /*  height: calc(50vh - 20px)*/
+  }
+  .content{
+      min-height: 800px;
+  }

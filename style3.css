@@ -1,0 +1,73 @@
+﻿h2{
+ text-align: center;
+ padding: 10px;
+ margin: 0;
+}
+
+h3 {
+ color: #000;
+ font-size: 1em;
+}
+
+body{
+ line-height: 1;
+ height: 100%; 
+ font: 0.8em Arial, sans-serif;
+}
+ul{
+ padding: 5px 5px 5px 15px;	
+}
+
+.wrapper{
+ width: 50%;
+ margin: 20px auto;
+ overflow: hidden;
+}
+
+.header, .footer{
+ font-size: 18px;
+ font-weight: normal;
+ height: 50px;
+ background: #ADD8E6;
+ color: #181EFC;
+ text-transform: uppercase;
+ text-align: center;
+ padding: 10px;
+}
+
+.footer{
+ padding: 20px;
+}
+
+.left{
+ width: 27%;
+ height: 350px;
+ background: #F0E68C;
+ color: #3533D8;
+ padding: 5px;
+ margin: 0;
+ display: inline-block;
+ vertical-align: top;
+}
+.menu{
+ background:  #F0E68C;
+ float:left;
+}
+.content{
+ background: #fff;
+ color: #000;
+ background: url("images/ball5.png") repeat-y top right, white;
+ width: 70%;
+ display: inline-block;
+ padding: 0;
+ height: 350px;
+}
+.baner{
+ float: left;
+ padding: 10px;
+}
+a{
+ text-decoration: underline;
+}
+
+

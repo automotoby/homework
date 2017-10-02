@@ -1,0 +1,25 @@
+@media all and (max-width: 800px) {
+    body { color: blue;}
+    article, div {height: 100%!important}
+}
+body {
+    background: lightblue;
+    height: 100%;
+    margin: 0;
+  }
+  article {
+    border: solid 10px lightblue;
+    background: #fff;
+    border-radius: 50px;
+    display: inline-block;
+
+  }
+  p {
+    text-align: center;
+  }
+  div {
+    border-radius: 25px;
+  }
+  article, div {
+    height: calc(50vh - 20px);
+  }

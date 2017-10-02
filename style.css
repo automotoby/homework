@@ -1,0 +1,73 @@
+﻿h2{
+ text-align: center;
+}
+
+h3 {
+ color: #000;
+ font-size: 1em;
+}
+
+p{
+ padding: 10px;
+}
+
+ul {
+ list-style-type: disc;
+}
+
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+ font: 0.8em Arial, sans-serif;
+ }
+
+body{
+ background: #00246a;
+ color: #fff;
+ line-height: 1;
+ height: 100%;
+}
+
+.wrapper{
+ width: 50%;
+ margin: 20px auto;
+}
+
+.header, .footer{
+ font-size: 1.5em;
+ font-weight: normal;
+ height: 50px;
+ background: #ADD8E6;
+ color: #181EFC;
+ text-transform: uppercase;
+ text-align: center;
+ vertical-align: middle;
+}
+
+.footer{
+ height: 80px;
+}
+
+.left{
+ width: 140px;
+ background: #F0E68C;
+ color: #3533D8;
+ padding: 10px;
+ vertical-align: top;
+}
+
+.content{
+ width: 420px;
+ background: #fff;
+ color: #000;
+ background: url("images/ball5.png") repeat-y top right, white;
+}
+
+.baner{
+ float: left;	
+ padding: 10px;	
+}
+a{
+ text-decoration: underline;
+}
+
