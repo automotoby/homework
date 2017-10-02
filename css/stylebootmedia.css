@@ -1,6 +1,7 @@
 @media all and (max-width: 800px) {
     body { color: blue;}
     article, div {height: 100%!important}
+    article{display: block;}
 }
 body {
     background: lightblue;
