@@ -10,8 +10,10 @@ h3 {
 }
 
 p{
- padding: 0 10px 10px;
+ padding: 0 20px 20px;
  margin: 0;
+ font-size: 1.2em;
+ text-align: justify;
 }
 
 body{
@@ -25,7 +27,7 @@ ul{
 }
 
 .wrapper{
- width: 50%;
+ width: 80%;
  margin: 20px auto;
  overflow: hidden;
 }
@@ -68,10 +70,19 @@ ul{
 
 .baner{
  float: left;
- padding: 0 10px 0 0;
+ padding: 0 20px 20px 20px;
 }
 
 a{
  text-decoration: underline;
 }
-
+.mark{
+    padding: 10px;
+    background-color: lightgreen;
+    border: solid green 1px;
+    position: fixed;
+    right: 12%;
+    top: 15%;
+    width: 70px;
+    text-align: center;
+}
