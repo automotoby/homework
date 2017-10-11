@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    #navmenu li{
+width: 125px;
+text-align: center;
+position: relative;
+float: left;
+margin-right: 4px;
+    list-style-type: none;
+    margin: 0px;
+}
+#navmenu a{
+text-decoration: none;
+display: block;
+width: 125px;
+height: 25px;
+line-height: 25px;
+background-color: #00cff0;
+border: 1px solid #ccc;
+border-radius: 5px;
+color: white;
+}
+#navmenu li:hover > a{
+background-color: #00d3f5;
+}
+#navmenu li:hover a:hover{
+font-size: 105%;
+}
+#navmenu ul{
+    list-style-type: none;
+    margin: 0px;
+display: block;
+position:absolute;
+top: 26px;
+left: 0;
+visibility: hidden;
+margin: 0;
+padding: 0;
+}
+#navmenu li:hover ul{
+visibility: visible;
+}
+#navmenu{
+margin: auto;
+width: 700px;
+}`#navmenu, #navmenu ul{
+list-style-type: none;
+}
+#navmenu li{
+width: 125px;
+text-align: center;
+position: relative;
+float: left;
+margin-right: 4px;
+}
+#navmenu a{
+text-decoration: none;
+display: block;
+width: 125px;
+height: 25px;
+line-height: 25px;
+background-color: #00cff0;
+border: 1px solid #ccc;
+border-radius: 5px;
+color: white;
+}
+#navmenu li:hover > a{
+background-color: #00d3f5;
+}
+#navmenu li:hover a:hover{
+font-size: 105%;
+}
+#navmenu ul{
+display: block;
+position:absolute;
+top: 26px;
+left: 0;
+visibility: hidden;
+margin: 0;
+padding: 0;
+}
+#navmenu li:hover ul{
+visibility: visible;
+}
+#navmenu{
+margin: auto;
+width: 700px;
+}
+
+ul#navmenu li ul li ul {
+    list-style-type: none;
+    position: absolute;
+    display: none;
+    left: 0;
+    margin: -26px 0 0 127px;
+    padding: 0;
+}
+ul#navmenu li ul li:hover ul {
+    display: block;
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+        <ul id="navmenu">
+                <li><a href="#">Home</a>
+                <ul class="subforums">
+                <li><a href="#">Elite's</a></li>
+                <li><a href="#">Newbs</a></li>
+                <li><a href="#">Subscribers</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Samples</a>
+                <ul class="subsites">
+                <li><a href="#">Architecture</a>
+                        <ul>
+                          <li><a href="#">ArchitectureA</a></li>
+                          <li><a href="#">ArchitectureB</a></li>
+                        </ul>
+                    
+                    
+                    </li>
+                <li><a href="#">Furniture</a>
+                    
+                        <ul>
+                          <li><a href="#">FurnitureA</a></li>
+                          <li><a href="#">FurnitureB</a></li>
+                        </ul>
+                   
+                </li>
+                </ul>
+                </li>
+                <li><a href="#">Workshop</a>
+                <ul class="subcontactus">
+                <li><a href="#">By Phone</a></li>
+                <li><a href="#">By e-mail</a></li>
+                <li><a href="#">By Text</a></li>
+                </ul>
+                </li>
+                <li><a href="#">About</a>
+                <ul class="subabout">
+                <li><a href="#">The Team</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Our Goal</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Contact Us</a>
+                <ul class="subsignup">
+                <li><a href="#">Find Out More</a></li>
+                <li><a href="#">Costs</a></li>
+                <li><a href="#">Paying Methods</a></li>
+                </ul>
+                </li>
+                </ul>
+</body>
+</html>

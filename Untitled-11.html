@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="file.css" media="all">
+    <title>Document</title>
+    <style>
+        
+@import "file.css" screen, print;
+@media print { h2 { text-align: center } }
+@import "file.css" screen, print;
+ 
+*[class^='div']{color: green}
+
+    </style>
+</head>
+<body>
+    <div class="mydiv"><p>1</p>
+
+        <div class="mydiv"><p>2</p>
+            <div class="mydiv"><p>3</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+    <form action="">
+            <input name="radio" type="radio" value="test">
+            <input type="radio" required value="test">
+            <input name="radio" type="radio" checked="test">
+            <input name="radio" type="radio">test</input>
+    </form></div>
+</body>
+</html>
