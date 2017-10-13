@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <style>
+            div{margin: 50px}
+                
+                .talkbubble
+                {
+                      width: 200px;
+                      padding: 5px 10px 5px 10px;
+                      min-height: 40px;
+                      background: lightgreen;
+                      position: relative;
+                      -moz-border-radius: 10px;
+                      -webkit-border-radius: 10px;
+                      border-radius: 10px;
+                }
+                .talkbubble:before
+                {
+                      content:"";
+                      position: absolute;
+                      right: 100%;
+                      top: 12px;
+                      width: 0;
+                      height: 0;
+                      border-top: 13px solid transparent;
+                      border-right: 26px solid lightgreen;
+                      border-bottom: 13px solid transparent;
+                }
+                
+                </style>
+                    <title>Document</title>
+</head>
+<body>
+
+                
+                <div class="talkbubble">ПИОНЕР &mdash;<br />всем ребятам пример!</div><br />
+                <div class="talkbubble">Не трогайте мокрыми руками оголённые провода!<br />Они могут заржаветь!</div><br /> 
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    div{margin: 50px auto;
+    padding: 50px;
+    }
+    @keyframes MyAnimation2
+{
+    from { background-color: cyan; color: red }
+    50% { background-color: magenta; color: red }
+    to { background-color: cyan; color: blue }
+}
+        #EX3
+        {
+            background-color: yellow;
+            color: red;
+            padding: 10px;
+            text-align: center;
+            font-size: 40px;
+            transition-duration: 2s;
+            transition-property: background-color;
+            transition-timing-function: ease-out;
+            transition-delay: 1s;
+            animation: MyAnimation2 5s infinite;
+        }
+        #EX3:hover
+        {
+            background-color: green;
+            color: rgb(255, 255, 255);
+            
+        }
+        .SClipAni
+  {
+    -webkit-clip-path: ellipse(150px 100px at 50% 50%);
+  }
+
+  .SClipAni:hover
+  {
+    -webkit-animation: 'clipani' 1s infinite;
+  }
+
+  @-webkit-keyframes 'clipani'
+  {
+    0% { -webkit-clip-path: ellipse(150px 100px at 50% 50%); }
+    50% { -webkit-clip-path: ellipse(100px 130px at 50% 50%); }
+    100% { -webkit-clip-path: ellipse(150px 100px at 50% 50%); }
+  }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p style='border: solid red 1px; width: 300px; font-size: 40px; transform: rotate(-180deg);'>
+                CSS3 умеет<br>поворачивать</p>
+    </div>
+    <div>            
+        <p style='border: solid red 1px; width: 300px; font-size: 40px; transform: rotate(-90deg) skew(30deg,-10deg);transform-origin: 150px 50px'>
+                        CSS3 умеет<br>поворачивать</p>
+    </div> 
+    <div>
+        <p style='border: solid red 1px; width: 300px; font-size: 40px;
+        transform: scale(1.5)'>
+        CSS3 умеет<br>увеличивать</p>
+    </div>
+    <div>
+            <p style='border: solid red 1px; width: 300px; font-size: 40px;
+            transform: translate(-50px,-50px) rotate(10deg)'>
+            CSS3 умеет<br>перемещать</p>
+    </div>
+    <div style='border: solid 30px;
+    border-image-source: url("images/vitrage.png");
+    border-image-slice: 30;
+    border-image-repeat: repeat'>
+Однажды в студёную зимнюю пору я из лесу вышел. был сильный мороз. Гляжу &mdash; поднимается медленно в гору лошадка, везущая хворосту воз. И шествуя рядом, в спокойствии чинном, лошадку ведёт под уздцы мужичок, в больших сапогах, в полушубке овчинном, в больших рукавицах, а сам &mdash; с ноготок.
+</div>
+<div>
+        <p id='EX3'>
+        CSS3 умеет делать плавный переход
+        <br>между значениями стилевых свойств</p>
+</div>
+<div style='background-color: lightgreen'>
+<img src='images/fountain.jpg' class=SClipAni>
+</div>
+
+    
+</body>
+</html>
