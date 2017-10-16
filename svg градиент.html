@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <svg width=140 height=300 xmlns='http://www.w3.org/2000/svg'>
+            <defs>
+                <linearGradient id='LG4' x1='20%' y1='20%' x2='40%' y2='40%'>
+                    <stop offset='0%' stop-color=green />
+                    <stop offset='100%' stop-color=yellow />
+                </linearGradient>
+                <linearGradient id='LG5' x1='20%' y1='20%' x2='40%' y2='40%'
+                        spreadMethod=repeat>
+                    <stop offset='0%' stop-color=green />
+                    <stop offset='100%' stop-color=yellow />
+                </linearGradient>
+                <linearGradient id='LG6' x1='20%' y1='20%' x2='40%' y2='40%'
+                        spreadMethod=reflect>
+                    <stop offset='0%' stop-color=green />
+                    <stop offset='100%' stop-color=yellow />
+                </linearGradient>
+            </defs>
+            <rect x=5 y=5 width=100 height=80 stroke=red fill='url(#LG4)' />
+            <rect x=5 y=105 width=100 height=80 stroke=red fill='url(#LG5)' />
+            <rect x=5 y=205 width=100 height=80 stroke=red fill='url(#LG6)' />
+        </svg>
+    
+</body>
+</html>
