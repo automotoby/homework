@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @keyframes Animat-1{
+            0% {
+              transform: scale(1);
+            }
+            25% {
+              transform: scale(2); 
+            }
+            50% {
+              transform: scale(1);
+            }
+            75% {
+              transform: scale(2); 
+            }
+          }
+        @keyframes Animat-2{
+            0% {
+              transform: translate(0,0);
+            }
+            25% {
+              transform: translate(100px,0px); 
+            }
+            50% {
+              transform: translate(100px, 100px);
+            }
+            75% {
+              transform: translate(0,100px); 
+            }
+          }
+        @keyframes Animat-3{
+            from { color: #7c0101; }
+            to { color: #031679; }
+        }
+        
+        #anim1{
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            font-size: 20px;
+            width: 150px;
+            height: 50px;
+            border: 3px solid black;
+            background: #F0653E;
+            -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+
+        }
+        #anim2{
+            background-color: rgb(22, 184, 57);
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            font-size: 20px;
+            width: 150px;
+            height: 50px;
+            border: 3px solid black;
+            -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+        }
+        #anim3{
+            background-color: rgb(128, 228, 70);
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            font-size: 20px;
+            width: 150px;
+            height: 50px;
+            border: 3px solid black;
+            -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+        }
+        
+        #anim1:hover
+        {
+            animation:
+                Animat-2 5s infinite,Animat-3 1s infinite;
+        }
+        #anim2:hover
+        {
+            animation:
+                Animat-2 5s infinite,Animat-3 1s infinite;
+        }
+        #anim3:hover
+        {
+            animation:
+                Animat-2 5s infinite,Animat-3 1s infinite;
+        }
+        #all:hover #anim3
+        {
+            animation:
+                Animat-1 5s infinite,Animat-3 1s infinite;
+        }
+        </style>
+</head>
+<body>
+    <div id="all">
+        <div id='anim1'>
+        <p>Анимация 1</p>
+        </div>
+        <div id='anim2'>
+        <p>Анимация 2</p>
+        </div>
+        <div id='anim3'>
+        <p>Анимация 3</p>
+        </div>
+     
+    </div>
+
+</body>
+</html>
