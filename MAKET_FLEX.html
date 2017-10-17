@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+        <style>
+        
+        div
+        {
+            text-align: justify;
+        }
+        .nav1{
+            text-transform: uppercase; 
+            text-align: center; 
+            color: blue; 
+            padding: 10px; 
+            background-color: skyblue;
+        }
+        .Menu
+        {
+            flex-basis: 250px;
+            flex-grow: 1;
+            background-color: #F4E68C;
+        }
+        .Content
+        {
+            flex-grow: 3;
+            margin-left: 20px;
+            color: rgb(0, 0, 0);
+        }
+        .nav{
+            display: flex;
+        }
+        .footer{
+            background-color: skyblue;  
+            padding: 20px; 
+            text-transform: uppercase; 
+            text-align: center; 
+            color: blue
+        }
+        @media all and (max-width: 600px)
+    {
+        .nav{
+            flex-direction: column-reverse; 
+        }
+        .Menu{
+            background-color: white;
+        }
+        .Content img {
+            float: none;
+            width: 90%;
+            padding: 0;
+            margin: 0 auto;
+        }
+        .footer, .nav1{display: none}
+    }
+
+        </style>
+</head>
+<body>
+
+    
+    <div class="nav1"><p>привет участникам соревнований!</p></div>
+    
+    <div class="nav">
+    
+    <div class="Menu">
+        <p style="font-size: large; font-weight: bold; padding-left: 20px">Виды спорта:</p>
+        <ol style="list-style-type: square">
+        <li><a href="" target="_blank"> биатлон </a></li>
+        <li><a href="" target="_blank">футбол</a></li>
+        <li><a href="" target="_blank">стрельба из лука </a></li>
+        <li><a href="" target="_blank">прыжки в длину</a></li>
+        <li><a href="" target="_blank">прыжки в высоту</a></li>
+        </ol>
+    </div>
+    
+    <div class="Content">
+        <p style="font-size: 20px; font-weight: bold; text-align: center; text-transform: uppercase">Футбол</p>
+        <img src="images/foot.png" style="margin: 0cm 0.5cm 0.5cm 0.5cm; float: left">  
+        <p>Футбол — командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или другими частями тела (кроме рук) большее количество раз, чем команда соперника</p>
+        <p>Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов. Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для таких групп, как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями. Законы очень часто формулировались в общих чертах, которые позволяют упростить их применения в зависимости от характера игры.</p>
+        <div style="clear:both"></div>
+    </div>
+    
+    <div style="clear: both"></div>
+    
+    </div>
+                            
+    <div class="footer">главное не победа, а участие!</div>
+         
+</body>
+</html>
