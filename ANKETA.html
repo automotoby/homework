@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Анкета</title>
+    <script>
+            var surname=prompt('Введите вашу Фамилию','Иванов');
+            var name=prompt('Введите ваше Имя','Иван');
+            var middlename=prompt('Введите ваше Отчество','Иванович');
+            var year=prompt('Введите год рождения','1975');
+            var gender=confirm('Ваш пол - мужской???');
+            switch (gender) {
+                case true: alert("Ваша фамилия: "+surname+"\n"+"Ваше имя: "+name+"\n"+"Ваше отчество: "+middlename+"\n"+"Ваш год рождения: "+year+"\n"+'Ваш пол: мужской'); break;
+                default : alert("Ваша фамилия: "+surname+"\n"+"Ваше имя: "+name+"\n"+"Ваше отчество: "+middlename+"\n"+"Ваш год рождения: "+year+"\n"+'Ваш пол: Женский');
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
