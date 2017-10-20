@@ -6,21 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calculator</title>
     <style>
-    #my-input{
+    #number1, #number2, #result2{
         width: 200px;
         height: 50px;
         font-size: 25px;
+        display: inline-block;
+        vertical-align: middle;
     }    
-    #result{
-        width: 50px;
+    #but, #operation{
+        width: 100px;
         height: 50px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 10px;
     }
+    
     </style>
 </head>
 <body>
     <input id="number1">
     <select name="" id="operation" required>
-        <option value="">Select operator</option>
+        <option value="">Оperator</option>
         <option value="+">+</option>
         <option value="-">-</option>
         <option value="*">*</option>
@@ -28,7 +34,7 @@
         <option value="%">%</option>
     </select>
     <input id="number2">    
-    <input id="but" type="button" onclick="javascript:calculate();">
+    <input id="but" type="button" onclick="javascript:calculate();" value="=">
     <div id="result2"> </div>  
     
     

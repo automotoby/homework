@@ -4,50 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"-->
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script-->
+    <!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <style>
+    #my-input{
+        width: 200px;
+        height: 50px;
+        font-size: 25px;
+    }    
+    #result{
+        width: 50px;
+        height: 50px;
+    }
+    </style>
 </head>
 <body>
+    <input id="my-input">
+    <input id="but" type="button" onclick="javascript:run();">
+    <div id="result"> </div>
 
 
         <script>
-            var surname=prompt('Введите вашу Фамилию','Иванов');
-            var name=prompt('Введите ваше Имя','Иван');
-            var middlename=prompt('Введите ваше Отчество','Иванович');
-            var year=prompt('Введите год рождения','1975');
-            var gender=confirm('Ваш пол - мужской???');
-            switch (gender) {
-                case true: alert("Ваша фамилия: "+surname+"\n"+"Ваше имя: "+name+"\n"+"Ваше отчество: "+middlename+"\n"+"Ваш год рождения: "+year+"\n"+'Ваш пол: мужской'); break;
-                default : alert("Ваша фамилия: "+surname+"\n"+"Ваше имя: "+name+"\n"+"Ваше отчество: "+middlename+"\n"+"Ваш год рождения: "+year+"\n"+'Ваш пол: Женский');
+
+    var x = name(350,210);
+    function name(a,b) {
+        return a + b;
+    }
+    console.log(x);
+     alert(x);  
+
+     function run(){
+         var el = document.getElementById("my-input");
+         if (el){
+            var age = parseInt(el.value);
+            if (!isNaN(age)){
+                document.getElementById("result").innerHTML = "<b>Your age: </b>" +el.value;
+            } else{
+                alert("Error");
             }
-           
-                console.log('сообщение');
-            
-                var M='мама';
-                console.log(M);
-            
-                console.log('пора\nдомой');
-                var a=5;
-                console.log(a<8);
-                var rost=172.5;
-    var helloMsg='Привет';
-    var name='умник';
-
-    console.log( rost*2 );
-
-    console.log( rost-172 );
-
-    console.log( (rost-0.5)/2 );
-    var money=8000; if ( money<7000 ) { alert('денег нет!'); alert('но вы держитесь!'); } else alert('денег девать некуда!');
-
-    var side='down'; 
-    switch ( side ) { case 'up': alert('верхняя сторона'); 
-    break; 
-    case 'right': alert('правая сторона'); 
-    break; 
-    case 'down': alert('нижняя сторона'); 
-    break; case 'left': alert('левая сторона'); 
-    break; default: alert('неизвестная сторона'); }
-            
-            </script>
+         } else {
+             alert("no element");
+         }
+     }  
+</script>
+    <input id="number1">
+    <select name="" id="operation" required>
+        <option value="">Select operator</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input id="number2">    
+    <input id="but" type="button" onclick="javascript:calculate();" value="Calculate">
+    <div id="result2"> </div>  
+    
+    
+<script> 
+     function calculate(){
+         var el1 = document.getElementById("number1");
+         var el2 = document.getElementById("number2");
+         var op = document.getElementById("operation");
+         if (el1 && el2 && op){
+            var left = parseInt(el1.value);
+            var right = parseInt(el2.value);
+            var operator = parseInt(op.value);
+            if (!isNaN(left) && !isNaN(right)){
+                switch (operator){
+                    case "+": document.getElementById("result2").innerHTML = "<b>Sum is: </b>" +(left + right);
+                    break;
+                    case "-": document.getElementById("result2").innerHTML = "<b>Sum is: </b>" +(left - right);
+                    break;
+                    default: alert("Wrong operation");
+                }
+               
+            } else{
+                alert("Error");
+            }
+         } else {
+             alert("no element");
+         }
+     } 
+</script>               
 </body>
 </html>
