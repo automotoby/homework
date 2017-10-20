@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <style>
+    #my-input{
+        width: 200px;
+        height: 50px;
+        font-size: 25px;
+    }    
+    #result{
+        width: 50px;
+        height: 50px;
+    }
+    </style>
+</head>
+<body>
+    <input id="number1">
+    <select name="" id="operation" required>
+        <option value="">Select operator</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input id="number2">    
+    <input id="but" type="button" onclick="javascript:calculate();">
+    <div id="result2"> </div>  
+    
+    
+<script> 
+     function calculate(){
+         var el1 = document.getElementById("number1"),
+			 el2 = document.getElementById("number2"),
+			 op = document.getElementById("operation");
+         if (el1 && el2 && op){
+            var left = parseInt(el1.value),
+				right = parseInt(el2.value),
+				operator = op.value;
+            if (!isNaN(left) && !isNaN(right)){
+                switch (operator){
+                    case "+": setResult(left + right);
+                    break;
+                    case "-": setResult(left - right);
+                    break;
+                    case "*": setResult(left * right);
+                    break;
+                    case "/": setResult(left / right);
+                    break;
+                    case "%": setResult(left % right);
+                    break;
+                    default: alert("Wrong operation");
+                }
+               
+            } else{
+                alert("Error");
+            }
+         } else {
+             alert("no element");
+         }
+     } 
+     function setResult(result) {
+      document.getElementById("result2").innerHTML = "<b>Result is</b>: " + result;
+    }
+</script>               
+</body>
+</html>
