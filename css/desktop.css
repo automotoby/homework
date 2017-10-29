@@ -1,0 +1,122 @@
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul li{
+    list-style-position: outside;
+}
+a{
+    text-decoration: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+
+#Bg {
+    background: #fff;
+    overflow: hidden;
+    width: 100%;
+}
+#Header > div::after, #HeaderNav::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+.frontpage #Header {
+    background: url("../images/header_bg.jpg") no-repeat center top;
+    background-attachment: fixed;
+}
+.Page {
+    margin: 0 auto !important;
+    padding: 0;
+}
+#LogoSmall.cssLogo {
+	background: url('../images/logo.png') no-repeat center center;
+	background-size: 188px 152px;
+	background-position: center bottom;
+	height: 90px;
+	width: 152px;
+}
+#LogoSmall.cssLogo {
+	background-image: url('../images/logo.png');
+}
+#LogoSmall {
+	float: left;
+}
+#Logo, #LogoSmall {
+	display: block;
+	float: none;
+	margin: 0 auto;
+	padding: 0;
+	text-indent: -9999px;
+	text-shadow: none;
+}
+
+#HeaderNav{
+    background: white;
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+    box-shadow: 0 0 3px rgba(0,0,0,.2);
+    padding: 0;
+    position: fixed;
+    transition: all .3s ease-out;
+    width: 100%;
+    z-index: 10000;
+}
+#HeaderNav.active{
+    top: 0;
+    height: 75px;
+}
+
+#HeaderNav > div {
+    position: relative;
+}
+#HeaderNav.active #LogoSmall {
+	left: -5px;
+	margin-left: 0;
+	position: relative;
+	top: 0;
+}
+#MainMenu::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+#HeaderNav.active #MainMenu {
+    right: 0;
+    float: right;
+    top: 0px;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+}
+.Menu > ul {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    list-style: none;
+}
+.Menu > ul > li {
+	clear: none !important;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	height: 75px;
+	line-height: 75px;
+	text-transform: uppercase;
+	width: auto;
+}
+.Menu > ul > li > a {
+    color: black;
+    width: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    position: relative;
+
+}
+.Menu > ul > li > a:active, .Menu > ul > li > a:focus, .Menu > ul > li > a:hover, .Menu > ul > li.active > a:active, .Menu > ul > li.active > a:focus, .Menu > ul > li.active > a:hover {
+    color: #f21b23;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <title>Calculator</title>
     <style>
     #number1, #number2, #result2{
@@ -23,7 +24,7 @@
     
     </style>
 </head>
-<body>
+<body onload="help()">
     <input id="number1">
     <select name="" id="operation" required>
         <option value="0">+</option>
@@ -33,7 +34,7 @@
         <option value="4">%</option>
     </select>
     <input id="number2">    
-    <input id="but" type="button" onclick="javascript:calculate();" value="=">
+    <input id="but" type="button"  onclick="javascript:calculate();" value="=">
     <input id="help" type="button" onclick="javascript:help();" value="help">
     <div id="result2"> </div>  
     
@@ -43,11 +44,13 @@
      function help(){
          var help = '';
          var counter = 0;
-         while (counter < opArray.length){
+         do {
+             if (opArray.length === 0) break;
              help+= opArray[counter] + ' моя функция \n\n';
              counter++;
 
          }
+         while (counter < opArray.length)
          alert(help)
      }
      function calculate(){
@@ -84,6 +87,9 @@
      function setResult(res) {
       document.getElementById("result2").innerHTML = "<b>Result is</b>: " + res;
     }
+    $(function(){help();
+        $("#but").click(calculate);
+    })
 </script>               
 </body>
 </html>
